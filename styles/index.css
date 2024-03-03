@@ -202,8 +202,14 @@ body{
 
 .explore_section{
     background-image: url('../assets/explore-section/Shared-Space-at-BDD.png');
-    
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
     margin: 20px 0;
+    
 }
 
 .explore_section h1{
@@ -268,6 +274,13 @@ body{
         .info_card{
             max-width: 800px;
             min-width: 300px;
+        }
+
+        .explore_section{
+            background-attachment: local;
+        }
+        .explore_section>div img{
+            max-width: 300px;
         }
 
  }
