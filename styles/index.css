@@ -4,8 +4,7 @@
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
     line-height: 160%;
-    
-    
+    scroll-behavior: smooth;
 }
 
 button{
@@ -451,6 +450,19 @@ footer img{
 .community_cards>div:hover p{
     display: block;
     
+}
+.scroll_up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    height: 60px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
 }
  @media (max-width:1200px){
     

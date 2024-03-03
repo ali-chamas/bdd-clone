@@ -164,3 +164,15 @@ let hubHeaders = document.querySelectorAll('.hub_h')
 for(let i =0;i<hubHeaders.length;i++){
     hubHeaders[i].style.backgroundImage=hubCards[i].color
 }
+
+const scrollUp=document.getElementById('scrollBtn');
+window.addEventListener('scroll',function(){
+    let y=this.window.scrollY;
+    if(y>=1200){
+        scrollUp.style.display='flex'
+    }
+    else{
+        scrollUp.style.display='none'
+    }
+
+})
