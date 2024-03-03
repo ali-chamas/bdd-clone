@@ -21,7 +21,7 @@ header{
     position: fixed;
     top: 0;
     justify-content: space-evenly;
-    
+    z-index: 10;
     
 }
 
@@ -30,7 +30,7 @@ body{
 }
 
 section{
-    margin: 40px 0;
+    margin-bottom: 40px ;
 }
 
 header>a{
@@ -172,7 +172,6 @@ header p>i{
  
 
 .info_section{
-    margin: 40px;
     text-align: center;
 }
 .info_section>h1{
@@ -190,7 +189,6 @@ header p>i{
     min-width: 200px;
     min-height: 500px;
     text-align: center;
-    flex-grow: 1;
     box-shadow: 1px 3px 1px 6px rgba(216, 213, 213, 0.1);
     border-radius: 5px;
 }
@@ -237,6 +235,9 @@ header p>i{
 }
 
 
+.join_section>{
+    text-align: center;
+}
 
 .join_section h1{
     font-size: 50px;
@@ -244,13 +245,14 @@ header p>i{
 }
 .join_section img{
     max-width:550px;
+    max-height: 450px;
 }
 
 .join_card{
     background-color: white;
     padding: 15px 40px;
     max-width: 400px;
-    min-width: 200px;
+    min-width: 400px;
     border-radius: 10px;
 }
 .join_card:hover{
@@ -259,6 +261,11 @@ header p>i{
 }
 .join_card h2{
     font-size: 28px;
+    text-align: center;
+}
+
+.join_card button{
+    height: 50px;
 }
 
 .join_card ul{
@@ -274,6 +281,86 @@ header p>i{
     color: blue;
 }
   
+.join_section>p{
+    text-align: center;
+}
+
+.joinCards_container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.hub_section{
+    background-image: url('../assets/hub-section/parallax-light.jpg');
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    max-height: 600px;
+    padding: 80px 150px;
+}
+.hub_section h1{
+    font-size: 50px;
+}
+
+.hub_cards{
+    max-width: 300px;
+}
+.hub_cards img{
+    width: 120px;
+}
+.hub_cards h3{
+    color: rgb(36, 34, 34);
+    font-size: 22px;
+}
+.hub_cards h2{
+    background-clip: text;
+    color: transparent;
+    font-size: 36px;
+}
+
+
+footer{
+    background-color: rgb(31, 31, 31);
+    gap: 10px;
+}
+footer a{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+footer a:hover{
+    border-bottom:3px solid rgb(57, 110, 183);
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+
+footer h2{
+    color: white;
+}
+footer small{
+    color: white;
+}
+footer h3{
+    color: grey;
+    font-size: 20px;
+}
+
+footer i{
+    color: rgb(57, 110, 183);
+    font-size: 20px;
+}
+.footer_bottom i{
+    color:white
+}
+
+footer img{
+    max-width: 250px;
+}
+
  @media (max-width:1200px){
     
     .dropdown p{
@@ -281,6 +368,12 @@ header p>i{
     }
     nav a{
         font-size: 16px;
+    }
+    .join_section_img{
+       display: none;
+    }
+    .hub_section{
+        padding: 80px 30px;
     }
     
  }
@@ -298,6 +391,18 @@ header p>i{
     }
     .mobile_nav{
         display: block;
+    }
+    .footer_top{
+        flex-direction: column;
+    }
+    .footer_buttons{
+        flex-direction: column;
+    }
+    .footer_nav{
+        flex-direction: column;
+    }
+    .footer_bottom{
+        flex-direction: column;
     }
  }
 
@@ -330,4 +435,24 @@ header p>i{
             max-width: 300px;
         }
 
+        .join_section img{
+            max-width: 150px;
+        }
+        .join_section h1{
+            font-size: 28px;
+        }
+        .join_card{
+            min-width: 300px;
+        }
+        .hub_section{
+            max-height: 1500px;
+        }
+        .hub_section h1{
+            font-size: 28px;
+        }
+        .hubCards_container{
+            flex-direction: column;
+            gap: 30px;
+        }
+        
  }

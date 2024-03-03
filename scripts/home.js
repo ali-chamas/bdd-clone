@@ -107,6 +107,18 @@ let joinCards=[
         ul:[
             'Day and weekly passes','The Smart Starter','The Free Bird','The Happy Committer','The Dedicated'
         ]
+    },
+    {
+        title:'MEETING & EVENT SPACES',
+        ul:[
+            'Four fully equipped meeting rooms, up to 12 people','One closed event space, up to 250 people','3 Training rooms, 30-50 people each','TRooftop','Garden'
+        ]
+    },
+    {
+        title:'VIRTUAL OFFICES',
+        ul:[
+            'Business Address','Business Address Plus','Yearly Business Address'
+        ]
     }
 ]
 
@@ -119,7 +131,7 @@ for(let i = 0;i<joinCards.length;i++){
           
         </ul>
     </div>
-    <button class="button-style">Know More</button>
+    <button type='button' class="button-style">Know More</button>
 </div>`
 }
 
@@ -129,4 +141,26 @@ for(let i = 0;i<joinCards.length;i++){
     for(let j =0;j<joinCards[i].ul.length;j++){
         joinCardsUl[i].innerHTML+=`<li>${joinCards[i].ul[j]}</li>`
     }
+}
+
+const hubCardsContainer = document.getElementById('hubCards_container');
+
+let hubCards=[
+    {img:'home_community.png',number:3500,title:'Community Members',color:'linear-gradient(45deg, #17785b, #5bf004)'},
+    {img:'home_events.png',number:1533,title:'EVENTS PER YEAR',color:'linear-gradient(45deg, #8a1d94, #e53131)'},
+    {img:'home_vc.png',number:160,title:'STARTUPS, SMES AND SUPPORT ORGANIZATIONS',color:'linear-gradient(45deg, #135535, #24fa6f)'},
+    {img:'home_support.png',number:35,title:'INDUSTRIES REPRESENTED',color:'linear-gradient(45deg, #4c36d6, #0c92f3)'}
+]
+for(let i = 0;i<hubCards.length;i++){
+    hubCardsContainer.innerHTML+=`<div class="flex column hub_cards center">
+                                        <img src="./assets//hub-section/${hubCards[i].img}" alt="">
+                                        <h2 class='hub_h'>${hubCards[i].number}+</h2>
+                                        <h3>${hubCards[i].title}</h3>
+                                    </div>`
+}
+
+let hubHeaders = document.querySelectorAll('.hub_h')
+
+for(let i =0;i<hubHeaders.length;i++){
+    hubHeaders[i].style.backgroundImage=hubCards[i].color
 }
