@@ -199,6 +199,30 @@ body{
     gap:35px
 }
 
+
+.explore_section{
+    background-image: url('../assets/explore-section/Shared-Space-at-BDD.png');
+    
+    margin: 20px 0;
+}
+
+.explore_section h1{
+    color: white;
+    font-size: 50px;
+    
+}
+.explore_section>div{
+    background-color: rgb(28, 27, 27,0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.explore_section>div img{
+    max-width: 800px;
+}
   
  @media (max-width:1200px){
     
