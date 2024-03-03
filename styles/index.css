@@ -361,6 +361,59 @@ footer img{
     max-width: 250px;
 }
 
+.trending_section{
+    padding: 0 40px;
+}
+
+.trending_section h1{
+    font-size: 50px;
+}
+.trending_section button{
+    height: 50px;
+}
+.trending_img_container img{
+    max-width: 400px;
+    
+}
+
+.trending_card h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+.trending_card{
+    background-color: white;
+    max-width: 400px;
+}
+
+.trending_date{
+    border-top: 1px solid black;
+}
+
+.trending_cards{
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* hide wrapped cards */
+    max-height: 620px;
+    position: relative;
+}
+.right_btn{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.left_btn{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
  @media (max-width:1200px){
     
     .dropdown p{
@@ -453,6 +506,22 @@ footer img{
         .hubCards_container{
             flex-direction: column;
             gap: 30px;
+        }
+        .trending_card img{
+            width: 300px;
+        }
+        .trending_card{
+            max-width: 300px;
+            height: 500px;
+        }
+        .trending_card h2{
+            font-size: 18px;
+        }
+        .trending_cards{
+            max-height: 500px;
+        }
+        .trending_section h1{
+            font-size: 28px;
         }
         
  }
