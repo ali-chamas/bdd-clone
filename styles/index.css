@@ -25,6 +25,14 @@ header{
     
 }
 
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+section{
+    margin: 40px 0;
+}
+
 header>a{
     margin-right: 20px;
 }
@@ -161,11 +169,8 @@ header p>i{
     
 }
  
-body{
-    background-color: rgb(235, 235, 235);
-}
-
  
+
 .info_section{
     margin: 40px;
     text-align: center;
@@ -208,7 +213,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
-    margin: 20px 0;
+    max-height: 600px;
     
 }
 
@@ -225,9 +230,48 @@ body{
     padding: 10%;
     align-items: center;
     justify-content: center;
+    
 }
 .explore_section>div img{
-    max-width: 800px;
+    max-width: 650px;
+}
+
+
+
+.join_section h1{
+    font-size: 50px;
+   
+}
+.join_section img{
+    max-width:550px;
+}
+
+.join_card{
+    background-color: white;
+    padding: 15px 40px;
+    max-width: 400px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+.join_card:hover{
+    scale: 1.05;
+    box-shadow: 1px 3px 1px 20px rgba(216, 213, 213, 0.1);
+}
+.join_card h2{
+    font-size: 28px;
+}
+
+.join_card ul{
+    list-style: circle;
+    
+}
+.join_card li{
+    color: rgb(117, 112, 112);
+    font-size: 18px;
+}
+
+.join_card li::marker{
+    color: blue;
 }
   
  @media (max-width:1200px){
@@ -277,7 +321,10 @@ body{
         }
 
         .explore_section{
-            background-attachment: local;
+            background-attachment: initial;
+        }
+        .explore_section h1{
+            font-size: 28px;
         }
         .explore_section>div img{
             max-width: 300px;

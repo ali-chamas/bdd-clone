@@ -54,19 +54,19 @@ let infoCards=[
         image:'3.png',
         title:'Smart Design',
         desc:'A new urban topography that reflects the creative community with innovative and ground breaking architecture seamlessly integrating the latest technological solutions.',
-        color:'rgba(73, 238, 95, 0.169)'
+        color:'rgba(73, 238, 95, 0.109)'
     },
     {
         image:'4.png',
         title:'Sustainability',
         desc:'An urban environment focused on minimizing primary energy consumption and reducing the impact of the built environment on human health and nature, with the aim of achieving LEED silver rating.',
-        color:'rgba(238, 73, 188, 0.279)',
+        color:'rgba(238, 73, 188, 0.179)',
     },
     {
         image:'5.png',
         title:'Social Well Being',
         desc:'A high tech and high quality environment that allows new ways of working and promotes change for more flexible work practices and lifestyles.',
-        color:'rgba(227, 238, 73, 0.279)'
+        color:'rgba(227, 238, 73, 0.179)'
     }
 ]
 
@@ -90,4 +90,43 @@ for(let i=0;i<infoCard.length;i++){
     infoCard[i].addEventListener('mouseleave',function(){
         infoCard[i].style.backgroundColor='white'
     })
+}
+
+
+//join us cards
+const joinCardsContainer=document.getElementById('joinCards_container')
+let joinCards=[
+    {
+        title:'PRIVATE OFFICES',
+        ul:[
+            'Ready to move in offices for startups','Customizable offices for medium to large companies','Investment opportunities in premium commercial real estate'
+        ]
+    },
+    {
+        title:'MEMBERSHIP PLANS TO OUR HOT DESKS',
+        ul:[
+            'Day and weekly passes','The Smart Starter','The Free Bird','The Happy Committer','The Dedicated'
+        ]
+    }
+]
+
+for(let i = 0;i<joinCards.length;i++){
+    joinCardsContainer.innerHTML+=`<div class="join_card flex justify-between align-center column gap ">
+    <div class="flex column align-center">
+        <h2>${joinCards[i].title}</h2>
+        <ul class='joinCards_ul'>
+           
+          
+        </ul>
+    </div>
+    <button class="button-style">Know More</button>
+</div>`
+}
+
+let joinCardsUl=document.querySelectorAll('.joinCards_ul');
+
+for(let i = 0;i<joinCards.length;i++){
+    for(let j =0;j<joinCards[i].ul.length;j++){
+        joinCardsUl[i].innerHTML+=`<li>${joinCards[i].ul[j]}</li>`
+    }
 }
