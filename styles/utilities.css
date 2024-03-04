@@ -21,6 +21,9 @@
 .align-center{
     align-items: center;
 }
+.justify_center{
+    justify-content: center;
+}
 .gap{
     gap: 35px;
 }

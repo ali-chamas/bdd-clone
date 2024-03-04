@@ -60,13 +60,13 @@ let infoCards=[
         image:'4.png',
         title:'Sustainability',
         desc:'An urban environment focused on minimizing primary energy consumption and reducing the impact of the built environment on human health and nature, with the aim of achieving LEED silver rating.',
-        color:'rgba(238, 73, 188, 0.179)',
+        color:'rgba(238, 73, 188, 0.109)',
     },
     {
         image:'5.png',
         title:'Social Well Being',
         desc:'A high tech and high quality environment that allows new ways of working and promotes change for more flexible work practices and lifestyles.',
-        color:'rgba(227, 238, 73, 0.179)'
+        color:'rgba(227, 238, 73, 0.109)'
     }
 ]
 
@@ -143,6 +143,9 @@ for(let i = 0;i<joinCards.length;i++){
     }
 }
 
+
+//hub-section cards
+
 const hubCardsContainer = document.getElementById('hubCards_container');
 
 let hubCards=[
@@ -165,6 +168,8 @@ for(let i =0;i<hubHeaders.length;i++){
     hubHeaders[i].style.backgroundImage=hubCards[i].color
 }
 
+
+//scroll up button
 const scrollUp=document.getElementById('scrollBtn');
 window.addEventListener('scroll',function(){
     let y=this.window.scrollY;
